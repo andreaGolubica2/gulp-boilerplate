@@ -4,12 +4,12 @@
   "description": "Bootstrap, jQuery,Sass",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "./node_modules/.bin/gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andreaGolubica2/gulp-boilerplate.git",
-    "gulp": "./node_modules/.bin/gulp"
+    "url": "git+https://github.com/andreaGolubica2/gulp-boilerplate.git"
   },
   "keywords": [
     "bootstrap",
