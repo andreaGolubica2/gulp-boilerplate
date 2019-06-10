@@ -8,7 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andreaGolubica2/gulp-boilerplate.git"
+    "url": "git+https://github.com/andreaGolubica2/gulp-boilerplate.git",
+    "gulp": "./node_modules/.bin/gulp"
   },
   "keywords": [
     "bootstrap",
@@ -23,6 +24,13 @@
   },
   "homepage": "https://github.com/andreaGolubica2/gulp-boilerplate#readme",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-newer": "^1.4.0",
+    "gulp-noop": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-terser": "^1.2.0"
   }
 }
