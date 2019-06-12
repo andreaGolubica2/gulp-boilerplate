@@ -34,6 +34,7 @@ function css(){
             outputStyle: devBuild ? 'expanded' : 'compressed'
 
         })).on('error', sass.logError)
+        .pipe(concat('bundle.min.css'))
         .pipe(gulp.dest(out))
         .pipe(sync.stream());
     }
@@ -43,7 +44,7 @@ function js(){
     const out = build + '/assets/js'
 
     return gulp.src([
-        'node/modules/jquery/dist/jquery.js',
+        'node_modules/jquery/dist/jquery.js',
             src + '/js/**/*'
     ])
     .pipe(newer(out))

@@ -1,0 +1,37 @@
+//--------------------------------------
+// This file containes all aplication-wide Sass functions.
+//--------------------------------------
+
+// Native url(...) function wraper
+///  @param {string} $base - base url for the asset
+/// @param {string} $type - asset type folder (e.g. fonts/)
+/// @param {string} $path - asset path 
+/// @return {url} -
+
+@function asset($base, $type, $path){
+    @return url($base + $type + $path);
+}
+
+/// Returns URL to a font based on its path
+/// @param {string} $path - font path 
+/// @param {string} $base [$base-url] - base url 
+/// @return {url} -
+/// @require $base-url
+
+@function font($path, $base: $base-url){
+    @return asset($base, 'fonts/', $path);
+
+}
+
+/// pozivanje fonta: font('Roboto/Roboto-Regular.ttf');
+
+
+/// Returns URL to an image based on its path
+/// @param {string} $path - image path 
+/// @param {string} $base [$base-url] - base url 
+/// @return {url} -
+/// @require $base-url
+
+@function image($path, $base: $base-url){
+    @return asset($base, 'images/', $path);
+}

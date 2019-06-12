@@ -1,0 +1,34 @@
+//-------------------------------------------------------------------
+// This file containes all @fonts-face declarations, if any
+//-------------------------------------------------------------------
+
+@font-face{
+    font-family: 'Montserrat';
+    src: font('Montserrat/Montserrat-ThinItalic.ttf') format('opentruetype');
+    font-weight: 100;
+    font-style: normal;
+    }
+
+    @font-face{
+        font-family: 'Montserrat';
+        src: font('Montserrat/Montserrat-Light.ttf') format('opentruetype');
+        font-weight: 300;
+        font-style: normal;
+        }
+
+        @font-face{
+            font-family: 'Montserrat';
+            src: font('Montserrat/Montserrat-Bold.ttf') format('opentruetype');
+            font-weight: 700;
+            font-style: normal;
+            }
+
+            @font-face{
+                font-family: 'Montserrat';
+                src: font('Montserrat/Montserrat-Black.ttf') format('opentruetype');
+                font-weight: 900;
+                font-style: normal;
+                }
+    
+
+    
