@@ -8,19 +8,75 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/bundle.min.css">
 
-    <title>Algebra projekt</title>
+    <title>Algebra Projekt</title>
   </head>
   <body>
-      <h1>Naslov</h1>
-        <br>
-      <h2>Podnaslov</h2>
+    <!-- BEGIN MAIN NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-black sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          Algebra
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-right" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-right" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-right" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-right" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END MAIN NAVIGATION -->
 
-      <h3>Članak</h3>
+    <!-- BEGIN LOGIN MODAL -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm" role="document">
+        <form id="loginForm" data-parsley-validate>
+            <div class="modal-content">
+                  
+              <div class="modal-header">
 
-      <p>Proba</p>
-
+                <h5 class="modal-title">Sign In</h5>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary">Sign In</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+    <!-- END LOGIN MODAL -->
     <!-- JavaScript -->
-    <script src="/assets/js/bundle.min.js"> </script>
- 
+    <script src="/assets/js/bundle.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      App.init({
+        login: true
+      });
+    });
+    </script>
   </body>
 </html>

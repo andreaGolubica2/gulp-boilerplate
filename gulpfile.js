@@ -45,7 +45,8 @@ function js(){
 
     return gulp.src([
         'node_modules/jquery/dist/jquery.js',
-            src + '/js/**/*'
+        'node_modules/parsleyjs/dist/parsley.js',
+        src + '/js/**/*'
     ])
     .pipe(newer(out))
     .pipe(concat('bundle.min.js'))

@@ -1,13 +1,12 @@
-//--------------------------------------
-// This file containes all aplication-wide Sass variables.
-//--------------------------------------
+// ---------------------------------------------------------
+// This file containes all application-wide Sass variables.
+// ---------------------------------------------------------
 
+// Color system
+$gray-555: #555;
 // FONTS
-$font-family-sans-serif: 'Montserrat', 'sans-serif';
-
-
+$font-family-sans-serif: 'Noto-Sans', sans-serif;
 // PATHS
-$base-url: '/assets/' !default; 			
-
-
-
+$base-url: '/assets/' !default;
+// ENABLE BOOTSTRAP GRADIENTS
+$enable-gradients: true;
