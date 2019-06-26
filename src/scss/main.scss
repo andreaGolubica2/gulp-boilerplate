@@ -23,7 +23,11 @@
 // 4. Layout releated sections
 
 // 5. Components
+@import
+    'components/jumbotron';
 
 // 6. Page specific styles
+@import
+    'pages/home'
 
 // 7. Themes

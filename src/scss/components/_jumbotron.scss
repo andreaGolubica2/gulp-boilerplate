@@ -1,0 +1,10 @@
+.jumbotron{
+    background: transparent image('hero.jpg') no-repeat center center;
+
+    background-size: cover;
+    text-shadow: 0 0 5px $white;
+
+    @include border-radius(0);
+
+
+}
